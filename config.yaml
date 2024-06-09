@@ -1,0 +1,36 @@
+openai:
+  key: "string"
+  model: "text-embedding-3-small"
+  tokenizer: "cl100k_base"
+  llm_model: "gpt-3.5-turbo"
+qdrant:
+  host: "qdrant"
+  port: 6333
+  collection: "Tenant Evaluation Test"
+  size_embeddings: 1536
+llm:
+  threshold: 0.5
+  prompt_template: "
+    Extract name and last name based on a next text that correspond a Data extraction using OCR. DRIVER LICENSE 
+    {text}
+    your answer must be just a json file and don't include any text, if you don't detect any name or last name your outcome must be with null value
+    "
+  prompt_template_1: "
+  Extract name and last name based on a next text that correspond a Data extraction of a pdf document. Use strategies to extract the main name and lastname of the text, just the first names
+  that you detect in the text.
+  {text}
+  your answer must be just a json file and don't include any text, if you don't detect any name or last name your outcome must be with null value
+  "
+  prompt_template_RAG: "
+  You an assistant that can help the user to response their questions based on a documents indexed in a vector database.
+  The next is the question {question} introduced by the user and you have only next text: {context} to response the correctly and structure.
+  Improve your answer only based on your context and make a conextion to identify the subjec of the question.
+  Create a good answer with creativity, support and correct grammar.
+  "
+secure:
+  SECRET_KEY : "29d25e094faa6c22a56cc18166a7a9c63b93f71f9a6f0fcc1a6cf63b38e8f3e7"
+  ALGORITHM : "HS256"
+  ACCESS_TOKEN_EXPIRE_MINUTES : 30
+  PASSWORD : "Pr0y3ct0_1nt3gr4d0"
+api:
+  max_length_prompt: 20

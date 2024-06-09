@@ -1,0 +1,21 @@
+{   "1":{
+    "name" : "Home",
+    "description": "Validation of the service, to verify that the service is active and running correctly. "
+},
+"2":{
+    "name" : "Upload_file",
+"description": "\n Upload into Qdrant vector database saving the embeddings and the payload. \n the endppoint have an alternative messages to show correct funtionality or if the user insert a document don't available"
+},
+"3":{
+    "name" : "OCR",
+    "description": "\n Extract data from pdf or image files and check the name and lastname provided by user"
+},
+"4":{
+    "name" : "Search",
+    "description": "\n Create a question and understand the context of the question, then search the answer in the database and return the answer using a LLM"
+},
+"5":{
+    "name" : "Generate Token",
+    "description": "\n Allow create an access token to use the service with a time limit of 30 hour and user authentication"
+}
+}
