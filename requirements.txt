@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+openai
+qdrant-client
+transformers
+sentence-transformers
+PyMuPDF
+fuzzywuzzy
+python-Levenshtein
+scipy==1.7.3
+requestsd
