@@ -4,13 +4,17 @@ import logging
 from app.services.database_manager import search_similar_texts
 from transformers import pipeline
 
+
 router = APIRouter()
+
 
 class QueryRequest(BaseModel):
     question: str
 
+
 # Initialize the QA pipeline
 qa_pipeline = pipeline("question-answering")
+
 
 @router.post("/query")
 async def query_endpoint(request: QueryRequest):
