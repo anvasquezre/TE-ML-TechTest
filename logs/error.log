@@ -1,0 +1,195 @@
+ERROR 2024-06-17 22:07:40,974 [run_ocr.py:extract_text_and_boxes:22]
+Error extracting text or bounding boxes: tesseract is not installed or it's not in your PATH. See README file for more information.
+
+ERROR 2024-06-17 22:07:58,332 [run_ocr.py:extract_text_and_boxes:22]
+Error extracting text or bounding boxes: tesseract is not installed or it's not in your PATH. See README file for more information.
+
+ERROR 2024-06-17 22:08:04,960 [run_ocr.py:extract_text_and_boxes:22]
+Error extracting text or bounding boxes: tesseract is not installed or it's not in your PATH. See README file for more information.
+
+ERROR 2024-06-17 22:10:39,864 [run_ocr.py:extract_text_and_boxes:22]
+Error extracting text or bounding boxes: tesseract is not installed or it's not in your PATH. See README file for more information.
+
+ERROR 2024-06-17 22:10:41,663 [run_ocr.py:extract_text_and_boxes:22]
+Error extracting text or bounding boxes: tesseract is not installed or it's not in your PATH. See README file for more information.
+
+ERROR 2024-06-17 22:30:15,479 [run_ocr.py:extract_text_and_boxes:22]
+Error extracting text or bounding boxes: tesseract is not installed or it's not in your PATH. See README file for more information.
+
+ERROR 2024-06-17 22:43:58,117 [run_doctr_ocr.py:extract_text_and_boxes_doctr:28]
+Error extracting text or bounding boxes with DocTR: unsupported object type for argument 'file'
+
+ERROR 2024-06-17 22:56:51,427 [run_doctr_ocr_extract.py:extract_text_and_boxes_doctr:42]
+Error extracting text or bounding boxes with DocTR: __init__() got an unexpected keyword argument 'det_pretrained_backbone_path'
+
+ERROR 2024-06-17 23:01:11,746 [run_doctr_ocr_extract.py:extract_text_and_boxes_doctr:53]
+Error extracting text or bounding boxes with DocTR: Attempting to deserialize object on a CUDA device but torch.cuda.is_available() is False. If you are running on a CPU-only machine, please use torch.load with map_location=torch.device('cpu') to map your storages to the CPU.
+
+ERROR 2024-06-17 23:02:42,428 [run_doctr_ocr_extract.py:extract_text_and_boxes_doctr:57]
+Error extracting text or bounding boxes with DocTR: module 'doctr.models.detection' has no attribute 'DetectionPredictor'
+
+ERROR 2024-06-17 23:06:00,771 [run_doctr_ocr_extract.py:extract_text_and_boxes_doctr:60]
+Error extracting text or bounding boxes with DocTR: module 'doctr.models.detection.predictor' has no attribute 'DetPredictor'
+
+ERROR 2024-06-17 23:18:34,575 [run_doctr_ocr_extract.py:extract_text_and_boxes_doctr:58]
+Error extracting text or bounding boxes with DocTR: module 'doctr.models.detection.predictor' has no attribute 'DetPredictor'
+
+ERROR 2024-06-17 23:18:53,118 [run_doctr_ocr_extract.py:extract_text_and_boxes_doctr:58]
+Error extracting text or bounding boxes with DocTR: module 'doctr.models.detection.predictor' has no attribute 'DetPredictor'
+
+ERROR 2024-06-17 23:19:13,754 [run_doctr_ocr_extract.py:extract_text_and_boxes_doctr:58]
+Error extracting text or bounding boxes with DocTR: module 'doctr.models.detection.predictor' has no attribute 'DetPredictor'
+
+ERROR 2024-06-17 23:19:31,594 [run_doctr_ocr_extract.py:extract_text_and_boxes_doctr:58]
+Error extracting text or bounding boxes with DocTR: module 'doctr.models.detection.predictor' has no attribute 'DetPredictor'
+
+ERROR 2024-06-18 00:03:04,388 [run_ner.py:test_extract_names:42]
+Error extracting names: 
+
+You tried to access openai.Completion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+
+ERROR 2024-06-18 00:05:25,996 [run_ner.py:test_extract_names:42]
+Error extracting names: 'ChatCompletionMessage' object is not subscriptable
+
+ERROR 2024-06-18 00:26:26,364 [image_processing.py:get_image_orientation:17]
+Error detecting orientation: name 're' is not defined
+
+ERROR 2024-06-18 00:29:25,942 [image_processing.py:get_image_orientation:20]
+Error detecting orientation: name 're' is not defined
+
+ERROR 2024-06-18 23:44:26,219 [doctr_module.py:extract_text_and_boxes_doctr:61]
+Error extracting text or bounding boxes with DocTR: unknown architecture: <class 'doctr.models.detection.predictor.pytorch.DetectionPredictor'>
+
+ERROR 2024-06-18 23:46:28,362 [doctr_module.py:extract_text_and_boxes_doctr:62]
+Error extracting text or bounding boxes with DocTR: __init__() got multiple values for argument 'det_predictor'
+
+ERROR 2024-06-19 00:24:38,447 [doctr_module.py:extract_names_and_boxes:99]
+Error in NER process: 'str' object has no attribute 'type'
+
+ERROR 2024-06-19 12:17:49,086 [doctr_module.py:extract_text_and_boxes_doctr:62]
+Error extracting text or bounding boxes with DocTR: 'DBNet' object has no attribute 'seek'. You can only torch.load from a file that is seekable. Please pre-load the data into a buffer like io.BytesIO and try to load from it instead.
+
+ERROR 2024-06-19 12:19:18,760 [api.py:load_models:54]
+Error loading models on startup: name 'io' is not defined
+
+ERROR 2024-06-19 12:21:04,982 [doctr_module.py:extract_text_and_boxes_doctr:66]
+Error extracting text or bounding boxes with DocTR: expected str, bytes or os.PathLike object, not DBNet
+
+ERROR 2024-06-19 12:23:38,552 [doctr_module.py:extract_text_and_boxes_doctr:68]
+Error extracting text or bounding boxes with DocTR: expected str, bytes or os.PathLike object, not DBNet
+
+ERROR 2024-06-19 12:24:40,519 [doctr_module.py:extract_text_and_boxes_doctr:68]
+Error extracting text or bounding boxes with DocTR: Need to provide labels during training
+
+ERROR 2024-06-19 13:05:01,312 [doctr_module.py:extract_text_and_boxes_doctr:62]
+Error extracting text or bounding boxes with DocTR: 'DBNet' object has no attribute 'seek'. You can only torch.load from a file that is seekable. Please pre-load the data into a buffer like io.BytesIO and try to load from it instead.
+
+ERROR 2024-06-19 13:12:51,154 [api.py:extract_names_endpoint:132]
+Error in extract_names_endpoint: 'text'
+
+ERROR 2024-06-19 13:22:02,002 [doctr_module.py:extract_text_and_boxes_doctr:57]
+Error extracting text or bounding boxes with DocTR: unknown architecture 'models/db_resnet50-79bd7d70.pt'
+
+ERROR 2024-06-19 13:30:20,847 [doctr_module.py:extract_text_and_boxes_doctr:62]
+Error extracting text or bounding boxes with DocTR: unknown architecture: <class 'NoneType'>
+
+ERROR 2024-06-19 13:35:27,252 [doctr_module.py:extract_names_and_boxes:130]
+Error in NER process: name 're' is not defined
+
+ERROR 2024-06-19 13:49:20,406 [api.py:extract_names_endpoint:130]
+Error in extract_names_endpoint: 'text'
+
+ERROR 2024-06-19 14:02:28,230 [api.py:extract_names_endpoint:134]
+Error in extract_names_endpoint: 'text'
+
+ERROR 2024-06-19 14:14:20,944 [api.py:extract_names_endpoint:137]
+Error in extract_names_endpoint: 'text'
+
+ERROR 2024-06-19 14:58:34,130 [api.py:extract_names_endpoint:133]
+Error in extract_names_endpoint: 'bbox'
+
+ERROR 2024-06-19 15:42:20,385 [api.py:extract_names_endpoint:145]
+Error in extract_names_endpoint: 'NoneType' object has no attribute 'names'
+
+ERROR 2024-06-19 15:44:05,272 [api.py:extract_names_endpoint:147]
+Error in extract_names_endpoint: 'NoneType' object has no attribute 'names'
+
+ERROR 2024-06-19 15:47:43,657 [api.py:extract_names_endpoint:147]
+Error in extract_names_endpoint: 'NoneType' object has no attribute 'names'
+
+ERROR 2024-06-19 15:48:51,588 [api.py:extract_names_endpoint:147]
+Error in extract_names_endpoint: 'NoneType' object has no attribute 'names'
+
+ERROR 2024-06-19 15:51:07,944 [api.py:extract_names_endpoint:147]
+Error in extract_names_endpoint: 'NoneType' object has no attribute 'names'
+
+ERROR 2024-06-19 15:57:57,379 [api.py:extract_names_endpoint:155]
+Error in extract_names_endpoint: name 'name_pairs' is not defined
+
+ERROR 2024-06-19 15:58:00,646 [api.py:extract_names_endpoint:155]
+Error in extract_names_endpoint: name 'name_pairs' is not defined
+
+ERROR 2024-06-19 16:02:40,038 [api.py:extract_names_endpoint:154]
+Error in extract_names_endpoint: 400: No file or file location provided
+
+ERROR 2024-06-19 16:02:49,274 [api.py:extract_names_endpoint:154]
+Error in extract_names_endpoint: 400: No file or file location provided
+
+ERROR 2024-06-19 16:07:15,144 [api.py:extract_names_endpoint:156]
+Error in extract_names_endpoint: 400: No file or file location provided
+
+ERROR 2024-06-19 16:07:57,045 [api.py:extract_names_endpoint:156]
+Error in extract_names_endpoint: 400: No file or file location provided
+
+ERROR 2024-06-19 16:13:17,816 [api.py:extract_names_endpoint:149]
+Error in extract_names_endpoint: 400: No file or file location provided
+
+ERROR 2024-06-19 16:14:39,110 [api.py:extract_names_endpoint:154]
+Error in extract_names_endpoint: 400: No file or file location provided
+
+ERROR 2024-06-19 16:17:01,778 [api.py:extract_names_endpoint:156]
+Error in extract_names_endpoint: 'NoneType' object has no attribute 'file_location'
+
+ERROR 2024-06-19 16:19:26,090 [api.py:extract_names_endpoint:156]
+Error in extract_names_endpoint: 'NoneType' object has no attribute 'file_location'
+
+ERROR 2024-06-19 16:23:05,273 [api.py:extract_names_endpoint:161]
+Error in extract_names_endpoint: 400: No file or file location provided
+
+ERROR 2024-06-19 16:23:43,079 [api.py:extract_names_endpoint:161]
+Error in extract_names_endpoint: local variable 'file_location' referenced before assignment
+
+ERROR 2024-06-19 16:25:47,706 [api.py:extract_names_endpoint:162]
+Error in extract_names_endpoint: 'NoneType' object has no attribute 'file_location'
+
+ERROR 2024-06-19 16:28:01,458 [api.py:extract_names_endpoint:162]
+Error in extract_names_endpoint: local variable 'file_location' referenced before assignment
+
+ERROR 2024-06-19 16:29:15,131 [api.py:extract_names_endpoint:162]
+Error in extract_names_endpoint: 400: No file or file location provided
+
+ERROR 2024-06-19 16:31:45,329 [api.py:extract_names_endpoint:162]
+Error in extract_names_endpoint: 400: No file or file location provided
+
+ERROR 2024-06-19 16:33:16,572 [api.py:extract_names_endpoint:163]
+Error in extract_names_endpoint: 400: No file or file location provided
+
+ERROR 2024-06-19 16:36:59,621 [api.py:extract_names_endpoint:171]
+Error in extract_names_endpoint: 400: No file or file location provided
+
+ERROR 2024-06-19 16:42:54,404 [api.py:extract_names_endpoint:158]
+Error in extract_names_endpoint: 'NoneType' object has no attribute 'lower'
+
+ERROR 2024-06-19 19:46:39,643 [embeddings_queue.py:_notify_one:387]
+Exception occurred invoking consumer for subscription a19e930a97504171a626f91ea669bf08to topic persistent://default/default/693d9f58-e0ab-471f-a339-f9d9bf61f390 
+
+ERROR 2024-06-19 19:46:40,670 [embeddings_queue.py:_notify_one:387]
+Exception occurred invoking consumer for subscription a19e930a97504171a626f91ea669bf08to topic persistent://default/default/693d9f58-e0ab-471f-a339-f9d9bf61f390 
+

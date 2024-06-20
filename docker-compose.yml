@@ -1,0 +1,42 @@
+version: "3.9"
+
+networks:
+  net:
+    driver: bridge
+
+services:
+  fastapi:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: fastapi_app
+    ports:
+      - "8000:8000"
+    depends_on:
+      - chromadb
+    volumes:
+      - ./models:/app/models
+      - ./logs:/app/logs
+      - ./data:/app/data
+      - ./database:/app/database
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+    networks:
+      - net
+
+  chromadb:
+    image: ghcr.io/chroma-core/chroma:latest
+    container_name: chromadb
+    environment:
+      - IS_PERSISTENT=TRUE
+      - CHROMADB_PERSISTENCE_DIR=/chroma/chroma/
+    volumes:
+      - chroma-data:/chroma/chroma/
+    ports:
+      - 8001:8000
+    networks:
+      - net
+
+volumes:
+  chroma-data:
+    driver: local
