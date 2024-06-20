@@ -1,0 +1,37 @@
+# Ignore Python bytecode
+*.pyc
+__pycache__/
+
+# Ignore logs
+logs/
+*.log
+
+# Ignore virtual environment
+.venv/
+venv/
+
+# Ignore temporary files
+*.tmp
+*.temp
+*.swp
+
+# Ignore Python egg files
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Ignore models and database
+models/
+database/
+
+# Ignore the data directory (optional, unless needed inside the container)
+data/
+
+# Ignore other unwanted files and directories
+.DS_Store
+.vscode/
+.idea/
+*.bak
+*.orig
